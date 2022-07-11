@@ -62,32 +62,11 @@ fun Login() {
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             LoginButton("Cadastar-se com o Google", R.drawable.ic_google, GoogleRed, onClick = {})
-            Spacer(
-                modifier = Modifier
-                    .height(20.dp)
-                    .fillMaxWidth()
-            )
-            LoginButton(
-                "Cadastar-se com o Facebook",
-                R.drawable.ic_facebook,
-                FacebookBlue,
-                onClick = {})
-            Spacer(
-                modifier = Modifier
-                    .height(48.dp)
-                    .fillMaxWidth()
-            )
-            Spacer(
-                modifier = Modifier
-                    .height(1.dp)
-                    .fillMaxWidth(0.15f)
-                    .background(Color.White)
-            )
-            Spacer(
-                modifier = Modifier
-                    .height(48.dp)
-                    .fillMaxWidth()
-            )
+            Spacer(modifier = Modifier.height(24.dp).fillMaxWidth())
+            LoginButton("Cadastar-se com o Facebook", R.drawable.ic_facebook, FacebookBlue, onClick = {})
+            Spacer(modifier = Modifier.height(48.dp).fillMaxWidth())
+            Spacer(modifier = Modifier.height(1.dp).fillMaxWidth(0.15f).background(Color.White))
+            Spacer(modifier = Modifier.height(48.dp).fillMaxWidth())
             Text(
                 text = "VER MAIS OPÇÕES",
                 modifier = Modifier.fillMaxWidth(),
@@ -95,11 +74,7 @@ fun Login() {
                 fontWeight = FontWeight.Bold,
                 textAlign = TextAlign.Center
             )
-            Spacer(
-                modifier = Modifier
-                    .height(48.dp)
-                    .fillMaxWidth()
-            )
+            Spacer(modifier = Modifier.height(48.dp).fillMaxWidth())
             Text(
                 text = buildAnnotatedString {
                     append("Ao se cadastrar, você concorda com nossos ")
