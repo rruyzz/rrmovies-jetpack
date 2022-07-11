@@ -25,9 +25,16 @@ import androidx.compose.ui.unit.sp
 import com.example.rmovies.R
 import com.example.rmovies.ui.theme.*
 import com.example.rmovies.utils.LoginButton
+import com.example.rmovies.utils.Margin24
+import com.example.rmovies.utils.Margin48
 
 @Composable
 fun Login() {
+    LoginContent()
+}
+
+@Composable
+fun LoginContent(){
     Box(
         modifier = Modifier
             .fillMaxSize()
@@ -62,11 +69,11 @@ fun Login() {
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             LoginButton("Cadastar-se com o Google", R.drawable.ic_google, GoogleRed, onClick = {})
-            Spacer(modifier = Modifier.height(24.dp).fillMaxWidth())
+            Margin24()
             LoginButton("Cadastar-se com o Facebook", R.drawable.ic_facebook, FacebookBlue, onClick = {})
-            Spacer(modifier = Modifier.height(48.dp).fillMaxWidth())
+            Margin48()
             Spacer(modifier = Modifier.height(1.dp).fillMaxWidth(0.15f).background(Color.White))
-            Spacer(modifier = Modifier.height(48.dp).fillMaxWidth())
+            Margin48()
             Text(
                 text = "VER MAIS OPÇÕES",
                 modifier = Modifier.fillMaxWidth(),
@@ -74,7 +81,7 @@ fun Login() {
                 fontWeight = FontWeight.Bold,
                 textAlign = TextAlign.Center
             )
-            Spacer(modifier = Modifier.height(48.dp).fillMaxWidth())
+            Margin48()
             Text(
                 text = buildAnnotatedString {
                     append("Ao se cadastrar, você concorda com nossos ")

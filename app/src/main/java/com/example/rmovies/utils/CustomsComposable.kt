@@ -34,3 +34,12 @@ fun LoginButton(buttonText: String, icon: Int, color: Color, onClick: () -> Unit
 
     }
 }
+
+@Composable
+fun Margin24(){
+    Spacer(modifier = Modifier.height(24.dp).fillMaxWidth())
+}
+@Composable
+fun Margin48(){
+    Spacer(modifier = Modifier.height(48.dp).fillMaxWidth())
+}
